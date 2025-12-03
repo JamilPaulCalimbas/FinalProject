@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Login - Inay Merly Delicacies</title>
+    <link rel="stylesheet" href="../FINALPROJECT/css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="../FINALPROJECT/photo/INAY_logo.png"></a> 
+        </div>
+        <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+        <ul id="nav-list">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+        </ul>
+    </nav>
+<section class="services-section">
+    <h2 class="section-title">Our Services</h2>
+    <p class="section-description">
+        Beyond our daily offerings, we provide special services to make your events and cravings unforgettable.
+    </p>
+
+    <div class="services-cards">
+        <div class="service-card">
+            <div class="service-icon">
+                <img src="../FINALPROJECT/photo/Costum Order.png" alt="Custom Order">
+            </div>
+            <h3>Bulk & Custom Orders</h3>
+            <p>Need a large batch of kakanin for a event or holiday? Place your personalized orders for any of our delicacies far in advance.</p>
+            <a href="#" class="service-link">Place Order &rarr;</a>
+        </div>
+        
+        <div class="service-card">
+            <div class="service-icon">
+                <img src="../FINALPROJECT/photo/Delivery Service.png" alt="Delivery Service">
+            </div>
+            <h3>Local Delivery</h3>
+            <p>Enjoy Inay Merly's Delicacies from the comfort of your home. We offer fast and reliable delivery within the local area.</p>
+            <a href="#" class="service-link">View Zones &rarr;</a>
+        </div>
+        
+    </div>
+</section>
+
+<script>
+    document.getElementById('mobile-menu').addEventListener('click', function() {
+        document.getElementById('nav-list').classList.toggle('open');
+    });
+</script>
+
+</body>
+</html>

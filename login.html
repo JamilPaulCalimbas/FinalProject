@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Login - Inay Merly Delicacies</title>
+    <link rel="stylesheet" href="../FINALPROJECT/css/style.css">
+</head>
+<body class="login-page">
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="../FINALPROJECT/photo/INAY_logo.png"></a> 
+        </div>
+        <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+        <ul id="nav-list">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+        </ul>
+    </nav>
+
+    <div class="login-container">
+        <form class="login-form">
+            <h2>Login</h2>
+            
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <button type="submit" class="btn btn-login">Login</button>
+            
+            <p class="forgot-password"><a href="#">Forgot Password?</a></p>
+            <p class="signup">Don't have an account? <a href="#">Sign Up</a></p>
+        </form>
+    </div>
+
+<script>
+    document.getElementById('mobile-menu').addEventListener('click', function() {
+        document.getElementById('nav-list').classList.toggle('open');
+    });
+</script>
+
+</body>
+</html>
